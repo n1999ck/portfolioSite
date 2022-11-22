@@ -1,0 +1,9 @@
+
+
+.banner{
+    height: 25vh;
+    background-image: url("../astronautspour.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
