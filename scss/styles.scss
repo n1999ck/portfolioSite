@@ -19,10 +19,15 @@ $secondary: #c8524f;
 
 .banner{
   height: 25vh;
-  background-image: url("../astronautspour.png");
+  background-image: url("content/astronautspour.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.carousel-inner {
+  height: max(600px);
+  object-fit: contain;
 }
 
 
