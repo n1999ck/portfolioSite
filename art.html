@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 <header class="banner d-flex align-items-center">
     <div class="container">
         <div class="row">
@@ -45,51 +45,57 @@
     </div>
 </nav>
 
-<div class="row">
-    <main class="col-12 bg-primary">
-        <div class="container bg-light mt-3">
-            <!--TODO add carousel-->
+<div class="row d-flex align-content-center">
+    <main class="col-12 bg-primary d-flex min-vh-100">
+        <div class="container bg-light mt-3 mb-3">
+            <h1 class="text-center">Art History Papers</h1>
+            <p class="lead text-center">Click the button on each slide to read my writing on the artwork!</p>
             <div class="carousel slide " data-bs-ride="false" id="artCarousel">
                 <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#artCarousel" type="button">Slide 1</button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#artCarousel" type="button" >Slide 2</button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#artCarousel" type="button" >Slide 3</button>
-                    <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#artCarousel" type="button" >Slide 4</button>
-                    <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#artCarousel" type="button" >Slide 5</button>
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#artCarousel" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#artCarousel" type="button" ></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#artCarousel" type="button" ></button>
+                    <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#artCarousel" type="button" ></button>
+                    <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#artCarousel" type="button" ></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="content/alma.jpeg" alt="Abstract painting">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block text-bg-dark">
                             <h5>Air View of a Spring Nursery</h5>
                             <p>Alma Thomas</p>
+                            <button class="btn btn-secondary" onclick="showPaper('alma')">Alma W. Thomas's World</button>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="content/david.jpg" alt="Statue of a man">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block text-bg-dark">
                             <h5>David</h5>
                             <p>Donatello</p>
+                            <button class="btn btn-secondary px-2 px-lg-0" onclick="showPaper('david')">Donatello's Bronze David: An Icon of Renaissance Homosexuality</button>
                         </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="content/endymion.jpeg" alt="Painting of a man">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block text-bg-dark">
                                 <h5>The Sleep of Endymion</h5>
                                 <p>Anne-Louis Girodet</p>
+                                <button class="btn btn-secondary" onclick="showPaper('endymion')">Endymion, Ephebe</button>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="content/stonehenge.jpeg" alt="Photograph of Stonehenge">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block text-bg-dark">
                                 <h5>Stonehenge</h5>
+                                <button class="btn btn-secondary" onclick="showPaper('stonehenge')">Stonehenge: Facts and Theories</button>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="content/mastodon.jpeg" alt="Painting of fossil excavation">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block text-bg-dark">
                                 <h5>The Exhumation of the Mastodon</h5>
                                 <p>Charles Willson Peale</p>
+                                <button class="btn btn-secondary px-2 px-lg-0" onclick="showPaper('mastodon')">History Painting, Prehistoric Subject: Peale's Exhumation of the Mastodon</button>
                             </div>
                         </div>
                     </div>
@@ -101,16 +107,17 @@
                     <span aria-hidden="true" class="carousel-control-next-icon"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-
-                <!--TODO add collapse of pdf iframe -->
           </div>
+            <div class="ratio ratio-4x3 d-flex justify-content-center">
+            <iframe id="paperFrame"></iframe>
+        </div>
         </div>
     </main>
 </div>
 
 
 <div class="row">
-    <footer class="bg-dark text-white">
+    <footer class="bg-dark text-white mt-auto">
         <p class="small text-end">Site © Nick Miller 2022</p>
         <p class="small text-end">Powered by Bootstrap and <3</p>
         <a class="d-flex justify-content-end" href="https://github.com/n1999ck/portfolioSite">
@@ -122,5 +129,6 @@
 </div>
 <script crossorigin="anonymous" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
