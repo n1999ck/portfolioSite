@@ -1,16 +1,11 @@
-# Bootstrap Sass & JS
+# My Portfolio Site
 
-Include [Bootstrap](https://getbootstrap.com)'s source Sass and compiled JavaScript bundle via npm. Also includes the [Autoprefixer](https://github.com/postcss/autoprefixer) for cross-browser CSS, [Stylelint](https://stylelint.io) for Sass code quality, and [Popper](https://popper.js.org), a peer dependency of Bootstrap's JS used to position dropdowns, popovers, and tooltips.
+This is a personal site. I created it as a final project for an Internet Programming class and plan to maintain it for the foreseeable future.
 
-## Edit in browser
+On the art history page, click the button on a carousel slide to read a pdf of my relevant paper. These papers are from two years of art history classes - I've included both some early works and some more recent ones to celebrate my progress.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/sass-js?file=index.html)
+On the code and tech page, click an image to enlarge it. The projects on the page are both personal and academic.
 
-## How to use
+On the recipe page, click a recipe title in the sidebar to read my recipe. The recipes are the best ones I've developed over the past year or so.
 
-```sh
-git clone https://github.com/twbs/examples.git
-cd examples/sass-js/
-npm install
-npm start
-```
+The contact page is functional and uses the web3forms contact API to send submissions straight to my email inbox. 
