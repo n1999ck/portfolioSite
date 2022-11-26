@@ -47,11 +47,15 @@
 <!--TODO: Add modal images-->
 
     <main class="bg-primary d-flex min-vh-100 ">
+        <div class="modalbg text-center" id="modalbg" onclick="hideModal()" tabindex="-1">
+            <
+            <img class="img-fluid  mx-auto my-auto modalDisplayImage" id="displayImage" src="">
+        </div>
         <div class="row row-cols-1 row-cols-lg-3 g-3">
 
             <div class="col">
                 <div class="card">
-<!--                    <img src="" alt="Gaming computer"> TODO: Add img-->
+                    <img alt="Computer on a desk" class="card-img-top" onclick="modal('computer')" src="content/computer.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Gaming computer</h5>
                         <p class="card-text">This is my main computer. I decided on the parts and built it in 2021. It's currently running Pop!_OS 22.04.</p>
@@ -59,18 +63,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="col">
                 <div class="card">
-                    <!--                    <img src="" alt="Calculator"> TODO: Add img-->
+                    <img alt="Disassembled calculator" class="card-img-top" onclick="modal('calculator')" src="content/calculator.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Calculator Repair</h5>
                         <p class="card-text">I was given a TI-84 Plus CE which had unresponsive buttons. By disassembling it and thoroughly cleaning it, I returned it to full usability. </p>
                     </div>
                 </div>
             </div>
+
             <div class="col">
                 <div class="card">
-                <!--                    <img src="" alt="laptonp> TODO: Add img-->
+                    <img alt="Laptop repair" class="card-img-top" onclick="modal('laptop')" src="content/laptop.jpg">
                 <div class="card-body">
                     <h5 class="card-title">Laptop Repair</h5>
                     <p class="card-text">This is a Dell Inspiron 13-7378 which ran out of charge quickly and struggled to perform. I installed a new battery and switched it to Pop!_OS, adding years onto its lifespan.</p>
@@ -80,21 +86,20 @@
 
             <div class="col">
             <div class="card">
-                <!--                    <img src="" alt="Gaming computer"> TODO: Add img-->
+                <img alt="Earth" class="card-img-top" onclick="modal('earth')" src="content/earth.jpg">
                 <div class="card-body">
                     <h5 class="card-title">Country Compare</h5>
                     <p class="card-text">For my final project in CPSC 1301K, I created a Python application which analyzed values assigned to each country based on human rights and happiness, finding the countries with the best ratios of each.</p>
-
                 </div>
             </div>
         </div>
+
             <div class="col">
                 <div class="card">
-                    <!--                    <img src="" alt="Gaming computer"> TODO: Add img-->
+                    <img alt="Coronavirus" class="card-img-top" onclick="modal('covid')" src="content/covid.jpg">
                     <div class="card-body">
                         <h5 class="card-title">COVID County Level Check</h5>
                         <p class="card-text">For my final project in CPSC 1302, I created an application in Java which provided CDC-recommended caution levels for any county in the United States based on its community spread of COVID-19.</p>
-
                     </div>
                 </div>
             </div>
@@ -106,7 +111,7 @@
     <footer class="bg-dark text-white">
         <p class="small text-end">Site © Nick Miller 2022</p>
         <p class="small text-end">Powered by Bootstrap and <3</p>
-        <a class="d-flex justify-content-end" href="https://github.com/n1999ck/portfolioSite">
+        <a aria-label="See this project on Github" class="d-flex justify-content-end" href="https://github.com/n1999ck/portfolioSite">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-github" viewBox="0 0 16 16">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
             </svg>
@@ -115,5 +120,6 @@
 </div>
 <script crossorigin="anonymous" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

@@ -5,6 +5,21 @@ function showPaper(paperTitle){
     paperFrame.src = paperLocation;
 }
 
+function modal(image){
+    //referenced https://www.w3schools.com/howto/howto_css_modals.asp
+    var imgLocation = './content/' + image + '.jpg';
+    document.getElementById("modalbg").style.display = "block";
+
+    const displayImage = document.getElementById('displayImage');
+    displayImage.style.display = "block";
+    displayImage.src = imgLocation;
+}
+
+function hideModal(){
+    document.getElementById("modalbg").style.display = "none";
+    document.getElementById("displayImage").style.display = "none";
+}
+
 function showRecipe(recipeName){
     //sets inner HTML of recipe window to whatever is selected
     const bananaBreadRecipe = "<h1>Banana Bread</h1>\n" +
@@ -115,7 +130,6 @@ function showRecipe(recipeName){
         "                                    <li>Let the syrup cool for a few minutes, then add in the cream and stir until combined.</li>\n" +
         "                                    <li>In a tall glass, combine the coffee and cream to taste.</li>\n" +
         "                                </ol>";
-    alert("helo")
     //Referenced https://stackoverflow.com/questions/6242976/javascript-hide-show-element for how to show or hide
     if (recipeName === "bananaBread"){
         document.getElementById("recipeWindow").innerHTML = bananaBreadRecipe; //shows the recipe
