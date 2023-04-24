@@ -1,16 +1,16 @@
 //Customization for Bootstrap defaults
 
 // Toggle global options
-$enable-gradients: true;
+$enable-gradients: false;
 $enable-shadows: true;
 
 
 // Customize some default color
 
-$body-bg: #e7e0df;
-$primary: #807e89;
-$dark: #071633;
-$secondary: #c8524f;
+$body-bg: #E6E2C3;
+$primary: #88A47C;
+$dark: #227C70;
+$secondary: #09483f;
 
 @import "bootstrap/scss/bootstrap";
 
@@ -18,8 +18,8 @@ $secondary: #c8524f;
 // Custom style for banner image
 
 .banner{
-  height: 25vh;
-  background-image: url("../content/astronautspour.png");
+  height: 15vh;
+  /*background-image: url("../content/astronautspour.png");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
